@@ -53,4 +53,5 @@ rec {
   };
 
   xray = pkg ./xray { };
+  v2raya = pkg ./v2raya { };
 }
