@@ -1,0 +1,21 @@
+{
+    "xray": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "xray",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "XTLS",
+            "repo": "Xray-core",
+            "rev": "v1.5.5",
+            "sha256": "sha256-x2aNAu+H3qJIKjQbE0rYxfQAWucvOMaU2eSy9YIZdcQ=",
+            "type": "github"
+        },
+        "version": "v1.5.5"
+    }
+}

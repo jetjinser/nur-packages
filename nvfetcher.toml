@@ -1,0 +1,3 @@
+[xray]
+src.github = "XTLS/Xray-core"
+fetch.github = "XTLS/Xray-core"
