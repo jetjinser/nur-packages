@@ -1,4 +1,46 @@
 {
+    "v2fly-geoip": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "v2fly-geoip",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-m1rL5Keg55TPIQKDEivcUMtjXW/wnwcj1kbQJRjW2aY=",
+            "type": "url",
+            "url": "https://github.com/v2fly/geoip/releases/download/202207280056/geoip.dat"
+        },
+        "version": "202207280056"
+    },
+    "v2fly-geosite": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "v2fly-geosite",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-xFzspU6WxwefZJQQs001ANGhlaa0VKeFufHtE9g9L9U=",
+            "type": "url",
+            "url": "https://github.com/v2fly/domain-list-community/releases/download/20220728161132/dlc.dat"
+        },
+        "version": "20220728161132"
+    },
+    "v2fly-private": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "v2fly-private",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-3FHoresOsgn+XlS807r7lZkOuqVwaaGYiTWbGG3uwOg=",
+            "type": "url",
+            "url": "https://github.com/v2fly/geoip/releases/download/202207280056/private.dat"
+        },
+        "version": "202207280056"
+    },
     "xray": {
         "cargoLocks": null,
         "extract": null,

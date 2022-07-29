@@ -1,3 +1,15 @@
 [xray]
 src.github = "XTLS/Xray-core"
 fetch.github = "XTLS/Xray-core"
+
+[v2fly-geoip]
+src.github = "v2fly/geoip"
+fetch.url = "https://github.com/v2fly/geoip/releases/download/$ver/geoip.dat"
+
+[v2fly-private]
+src.github = "v2fly/geoip"
+fetch.url = "https://github.com/v2fly/geoip/releases/download/$ver/private.dat"
+
+[v2fly-geosite]
+src.github = "v2fly/domain-list-community"
+fetch.url = "https://github.com/v2fly/domain-list-community/releases/download/$ver/dlc.dat"
