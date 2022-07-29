@@ -1,4 +1,4 @@
-{ lib, fetchFromGitHub, mkYarnPackage, buildGo117Module }:
+{ lib, fetchFromGitHub, mkYarnPackage, buildGo117Module, ... }:
 let
   pname = "v2raya";
   version = "48cc58d54727ea4beaadea5c0fb4150356809b72";
