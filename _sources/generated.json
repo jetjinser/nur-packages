@@ -18,6 +18,24 @@
         },
         "version": "v2.6.6"
     },
+    "icalingua-plus-plus-aur": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "icalingua-plus-plus-aur",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "b8ba3aff093f6b67a27ed8e2c60dc70815522d93",
+            "sha256": "sha256-nZuQtWmaW3t/gZ6qyiBnHxzLDWQp3shi6Ldr0kceb/8=",
+            "type": "git",
+            "url": "https://aur.archlinux.org/icalingua++.git"
+        },
+        "version": "b8ba3aff093f6b67a27ed8e2c60dc70815522d93"
+    },
     "v2fly-geoip": {
         "cargoLocks": null,
         "extract": null,

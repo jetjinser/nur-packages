@@ -17,3 +17,7 @@ fetch.url = "https://github.com/v2fly/domain-list-community/releases/download/$v
 [icalingua-plus-plus]
 src.github = "Icalingua-plus-plus/Icalingua-plus-plus"
 fetch.github = "Icalingua-plus-plus/Icalingua-plus-plus"
+
+[icalingua-plus-plus-aur]
+src.git = "https://aur.archlinux.org/icalingua++.git"
+fetch.git = "https://aur.archlinux.org/icalingua++.git"

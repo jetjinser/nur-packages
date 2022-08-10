@@ -12,6 +12,18 @@
       sha256 = "sha256-6bVekMOkZR+P6hpN1Wdce9altfqTwDT1nvFeUOjTzTk=";
     });
   };
+  icalingua-plus-plus-aur = {
+    pname = "icalingua-plus-plus-aur";
+    version = "b8ba3aff093f6b67a27ed8e2c60dc70815522d93";
+    src = fetchgit {
+      url = "https://aur.archlinux.org/icalingua++.git";
+      rev = "b8ba3aff093f6b67a27ed8e2c60dc70815522d93";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-nZuQtWmaW3t/gZ6qyiBnHxzLDWQp3shi6Ldr0kceb/8=";
+    };
+  };
   v2fly-geoip = {
     pname = "v2fly-geoip";
     version = "202208040058";
