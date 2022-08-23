@@ -21,3 +21,7 @@ fetch.github = "Icalingua-plus-plus/Icalingua-plus-plus"
 [icalingua-plus-plus-aur]
 src.git = "https://aur.archlinux.org/icalingua++.git"
 fetch.git = "https://aur.archlinux.org/icalingua++.git"
+
+[git-qq]
+src.github = "lomirus/gtk-qq"
+fetch.github = "lomirus/gtk-qq"
