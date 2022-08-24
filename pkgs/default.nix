@@ -56,4 +56,5 @@ rec {
   v2raya = pkg ./v2raya { };
   icalingua-plus-plus = pkg ./icalingua-plus-plus { };
   gtk-qq = pkgs.callPackage ./gtk-qq { };
+  river-git = pkg ./river-git { };
 }

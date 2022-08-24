@@ -14,25 +14,37 @@
   };
   icalingua-plus-plus = {
     pname = "icalingua-plus-plus";
-    version = "v2.6.6";
+    version = "v2.6.7";
     src = fetchFromGitHub ({
       owner = "Icalingua-plus-plus";
       repo = "Icalingua-plus-plus";
-      rev = "v2.6.6";
+      rev = "v2.6.7";
       fetchSubmodules = false;
-      sha256 = "sha256-6bVekMOkZR+P6hpN1Wdce9altfqTwDT1nvFeUOjTzTk=";
+      sha256 = "sha256-TkgesixaIwDB/oREql6g8ybLjIx40kXqN45OpRRxuNU=";
     });
   };
   icalingua-plus-plus-aur = {
     pname = "icalingua-plus-plus-aur";
-    version = "b8ba3aff093f6b67a27ed8e2c60dc70815522d93";
+    version = "f181b3ff7f42370e300493f4359b6c66a3c0f5bf";
     src = fetchgit {
       url = "https://aur.archlinux.org/icalingua++.git";
-      rev = "b8ba3aff093f6b67a27ed8e2c60dc70815522d93";
+      rev = "f181b3ff7f42370e300493f4359b6c66a3c0f5bf";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-nZuQtWmaW3t/gZ6qyiBnHxzLDWQp3shi6Ldr0kceb/8=";
+      sha256 = "sha256-5rBewzNrgG6BeWaJeuG+ZX/RAqGP0yRMk0o+jEB1Sio=";
+    };
+  };
+  river-git = {
+    pname = "river-git";
+    version = "29ae7ba311ac17cdc7e1a9f7fcb4e76bf2fe3675";
+    src = fetchgit {
+      url = "https://github.com/riverwm/river";
+      rev = "29ae7ba311ac17cdc7e1a9f7fcb4e76bf2fe3675";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-rWihdnk1M2HJlav4zGj+u7yz17p/AtMvzkUsaS0u//Y=";
     };
   };
   v2fly-geoip = {
@@ -45,10 +57,10 @@
   };
   v2fly-geosite = {
     pname = "v2fly-geosite";
-    version = "20220823085414";
+    version = "20220824011601";
     src = fetchurl {
-      url = "https://github.com/v2fly/domain-list-community/releases/download/20220823085414/dlc.dat";
-      sha256 = "sha256-whdC6iiEYiJldx9qSNr/AFOZTkh1k7B4aLSPuFlYC3w=";
+      url = "https://github.com/v2fly/domain-list-community/releases/download/20220824011601/dlc.dat";
+      sha256 = "sha256-xM32GHu2fGoVn30BfA4X7nQEHwtXYLjbCtXQ2cJxc3c=";
     };
   };
   v2fly-private = {
