@@ -14,60 +14,60 @@
   };
   icalingua-plus-plus = {
     pname = "icalingua-plus-plus";
-    version = "v2.6.7";
+    version = "v2.7.1";
     src = fetchFromGitHub ({
       owner = "Icalingua-plus-plus";
       repo = "Icalingua-plus-plus";
-      rev = "v2.6.7";
+      rev = "v2.7.1";
       fetchSubmodules = false;
-      sha256 = "sha256-TkgesixaIwDB/oREql6g8ybLjIx40kXqN45OpRRxuNU=";
+      sha256 = "sha256-4mqK6wsKk0CR/v3dtXAO8aIGQgTmFA0DvgD3v0CSkQk=";
     });
   };
   icalingua-plus-plus-aur = {
     pname = "icalingua-plus-plus-aur";
-    version = "f181b3ff7f42370e300493f4359b6c66a3c0f5bf";
+    version = "a0c47807b82216d1a3d41218b7c4935d78b35db2";
     src = fetchgit {
       url = "https://aur.archlinux.org/icalingua++.git";
-      rev = "f181b3ff7f42370e300493f4359b6c66a3c0f5bf";
+      rev = "a0c47807b82216d1a3d41218b7c4935d78b35db2";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-5rBewzNrgG6BeWaJeuG+ZX/RAqGP0yRMk0o+jEB1Sio=";
+      sha256 = "sha256-ewzIhAvARo1WzULF1WhQNiCgWXC25UHRfGi2AjqV87A=";
     };
   };
   river-git = {
     pname = "river-git";
-    version = "29ae7ba311ac17cdc7e1a9f7fcb4e76bf2fe3675";
+    version = "c0e64829f0517f6512438cbf80ae27bd21986b47";
     src = fetchgit {
       url = "https://github.com/riverwm/river";
-      rev = "29ae7ba311ac17cdc7e1a9f7fcb4e76bf2fe3675";
+      rev = "c0e64829f0517f6512438cbf80ae27bd21986b47";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-rWihdnk1M2HJlav4zGj+u7yz17p/AtMvzkUsaS0u//Y=";
+      sha256 = "sha256-vvK9DjgChf32fkzFRT+eJhRb00YYwZJYO48+HwRyIkM=";
     };
   };
   v2fly-geoip = {
     pname = "v2fly-geoip";
-    version = "202208180100";
+    version = "202209010055";
     src = fetchurl {
-      url = "https://github.com/v2fly/geoip/releases/download/202208180100/geoip.dat";
-      sha256 = "sha256-AkNYl47iDRLyv7nruTXek8ET39NsPXX8qWEdOlovMOg=";
+      url = "https://github.com/v2fly/geoip/releases/download/202209010055/geoip.dat";
+      sha256 = "sha256-lMb2k1qj+oHsfY/XvKuIMqUCFseFN6g/wr18BRN0uog=";
     };
   };
   v2fly-geosite = {
     pname = "v2fly-geosite";
-    version = "20220824011601";
+    version = "20220901005210";
     src = fetchurl {
-      url = "https://github.com/v2fly/domain-list-community/releases/download/20220824011601/dlc.dat";
-      sha256 = "sha256-xM32GHu2fGoVn30BfA4X7nQEHwtXYLjbCtXQ2cJxc3c=";
+      url = "https://github.com/v2fly/domain-list-community/releases/download/20220901005210/dlc.dat";
+      sha256 = "sha256-CDeDjnZSbSk7F+E5P3htaKJdrvM/ffcnGXlNR1eDM3o=";
     };
   };
   v2fly-private = {
     pname = "v2fly-private";
-    version = "202208180100";
+    version = "202209010055";
     src = fetchurl {
-      url = "https://github.com/v2fly/geoip/releases/download/202208180100/private.dat";
+      url = "https://github.com/v2fly/geoip/releases/download/202209010055/private.dat";
       sha256 = "sha256-3FHoresOsgn+XlS807r7lZkOuqVwaaGYiTWbGG3uwOg=";
     };
   };

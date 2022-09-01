@@ -31,11 +31,11 @@
             "name": null,
             "owner": "Icalingua-plus-plus",
             "repo": "Icalingua-plus-plus",
-            "rev": "v2.6.7",
-            "sha256": "sha256-TkgesixaIwDB/oREql6g8ybLjIx40kXqN45OpRRxuNU=",
+            "rev": "v2.7.1",
+            "sha256": "sha256-4mqK6wsKk0CR/v3dtXAO8aIGQgTmFA0DvgD3v0CSkQk=",
             "type": "github"
         },
-        "version": "v2.6.7"
+        "version": "v2.7.1"
     },
     "icalingua-plus-plus-aur": {
         "cargoLocks": null,
@@ -48,12 +48,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "f181b3ff7f42370e300493f4359b6c66a3c0f5bf",
-            "sha256": "sha256-5rBewzNrgG6BeWaJeuG+ZX/RAqGP0yRMk0o+jEB1Sio=",
+            "rev": "a0c47807b82216d1a3d41218b7c4935d78b35db2",
+            "sha256": "sha256-ewzIhAvARo1WzULF1WhQNiCgWXC25UHRfGi2AjqV87A=",
             "type": "git",
             "url": "https://aur.archlinux.org/icalingua++.git"
         },
-        "version": "f181b3ff7f42370e300493f4359b6c66a3c0f5bf"
+        "version": "a0c47807b82216d1a3d41218b7c4935d78b35db2"
     },
     "river-git": {
         "cargoLocks": null,
@@ -66,12 +66,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "29ae7ba311ac17cdc7e1a9f7fcb4e76bf2fe3675",
-            "sha256": "sha256-rWihdnk1M2HJlav4zGj+u7yz17p/AtMvzkUsaS0u//Y=",
+            "rev": "c0e64829f0517f6512438cbf80ae27bd21986b47",
+            "sha256": "sha256-vvK9DjgChf32fkzFRT+eJhRb00YYwZJYO48+HwRyIkM=",
             "type": "git",
             "url": "https://github.com/riverwm/river"
         },
-        "version": "29ae7ba311ac17cdc7e1a9f7fcb4e76bf2fe3675"
+        "version": "c0e64829f0517f6512438cbf80ae27bd21986b47"
     },
     "v2fly-geoip": {
         "cargoLocks": null,
@@ -81,11 +81,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-AkNYl47iDRLyv7nruTXek8ET39NsPXX8qWEdOlovMOg=",
+            "sha256": "sha256-lMb2k1qj+oHsfY/XvKuIMqUCFseFN6g/wr18BRN0uog=",
             "type": "url",
-            "url": "https://github.com/v2fly/geoip/releases/download/202208180100/geoip.dat"
+            "url": "https://github.com/v2fly/geoip/releases/download/202209010055/geoip.dat"
         },
-        "version": "202208180100"
+        "version": "202209010055"
     },
     "v2fly-geosite": {
         "cargoLocks": null,
@@ -95,11 +95,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-xM32GHu2fGoVn30BfA4X7nQEHwtXYLjbCtXQ2cJxc3c=",
+            "sha256": "sha256-CDeDjnZSbSk7F+E5P3htaKJdrvM/ffcnGXlNR1eDM3o=",
             "type": "url",
-            "url": "https://github.com/v2fly/domain-list-community/releases/download/20220824011601/dlc.dat"
+            "url": "https://github.com/v2fly/domain-list-community/releases/download/20220901005210/dlc.dat"
         },
-        "version": "20220824011601"
+        "version": "20220901005210"
     },
     "v2fly-private": {
         "cargoLocks": null,
@@ -111,9 +111,9 @@
             "name": null,
             "sha256": "sha256-3FHoresOsgn+XlS807r7lZkOuqVwaaGYiTWbGG3uwOg=",
             "type": "url",
-            "url": "https://github.com/v2fly/geoip/releases/download/202208180100/private.dat"
+            "url": "https://github.com/v2fly/geoip/releases/download/202209010055/private.dat"
         },
-        "version": "202208180100"
+        "version": "202209010055"
     },
     "xray": {
         "cargoLocks": null,
