@@ -1,19 +1,17 @@
-{ lib
-, stdenv
-, fetchFromGitHub
-, rustPlatform
-, libiconv
-, installShellFiles
-, pkg-config
-, openssl
-, gtk4
-, libadwaita
-, sqlite
-, grpc-tools
-, meson
-, glib
-, ninja
-, libxml2
+{
+  lib,
+  fetchFromGitHub,
+  rustPlatform,
+  pkg-config,
+  openssl,
+  gtk4,
+  libadwaita,
+  sqlite,
+  grpc-tools,
+  meson,
+  glib,
+  ninja,
+  libxml2,
 }:
 rustPlatform.buildRustPackage rec {
   pname = "gtk-qq";
@@ -30,19 +28,19 @@ rustPlatform.buildRustPackage rec {
 
   RUSTC_BOOTSTRAP = 1;
 
-  buildInputs = [ openssl gtk4 libadwaita sqlite ];
-  nativeBuildInputs = [ pkg-config grpc-tools meson glib ninja libxml2 ];
+  buildInputs = [openssl gtk4 libadwaita sqlite];
+  nativeBuildInputs = [pkg-config grpc-tools meson glib ninja libxml2];
 
   configurePhase = ''
     export HOME=$TEMPDIR
     export XDG_DATA_HOME=$TEMPDIR
-    meson setup builddir 
+    meson setup builddir
     meson compile -C builddir
   '';
 
   buildPhase = ''
     cargo build --release
-  ''; 
+  '';
 
   installPhase = ''
     mkdir -p $out/bin
@@ -56,7 +54,7 @@ rustPlatform.buildRustPackage rec {
       This app uses ricq as the rust bindings of QQ APIs.
     '';
     homepage = "https://github.com/lomirus/gtk-qq";
-    license = with licenses; [ agpl3 ];
-    maintainers = with maintainers; [ lomirus Goodjooy DHWIDSA ];
+    license = with licenses; [agpl3];
+    maintainers = with maintainers; [lomirus Goodjooy DHWIDSA];
   };
 }
