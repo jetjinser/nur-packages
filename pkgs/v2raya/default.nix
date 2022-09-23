@@ -1,13 +1,20 @@
-{ lib, fetchFromGitHub, mkYarnPackage, buildGo117Module, ... }:
-let
+{
+  lib,
+  fetchFromGitHub,
+  mkYarnPackage,
+  buildGo117Module,
+  sources,
+  ...
+}: let
   pname = "v2raya";
-  version = "48cc58d54727ea4beaadea5c0fb4150356809b72";
-  src = fetchFromGitHub {
-    owner = "SCP-2000";
-    repo = "v2rayA";
-    rev = version;
-    sha256 = "sha256-lLXg4KkdbOx8Sw8CPIQBkYpFJ5cX3immP0XcXkxKu78=";
-  };
+  inherit (sources.v2raya) version src;
+  /* version = "48cc58d54727ea4beaadea5c0fb4150356809b72"; */
+  /* src = fetchFromGitHub { */
+  /*   owner = "SCP-2000"; */
+  /*   repo = "v2rayA"; */
+  /*   rev = version; */
+  /*   sha256 = "sha256-lLXg4KkdbOx8Sw8CPIQBkYpFJ5cX3immP0XcXkxKu78="; */
+  /* }; */
   web = mkYarnPackage {
     inherit pname version;
     src = "${src}/gui";
@@ -20,17 +27,17 @@ let
     dontFixup = true;
   };
 in
-buildGo117Module {
-  inherit pname version;
-  src = "${src}/service";
-  vendorSha256 = "sha256-ALy3Co461N1MJpiEUnjOoNswY4TkE9W8nfeNRNLRyfQ=";
-  subPackages = [ "." ];
-  preBuild = ''
-    cp -a ${web} server/router/web
-  '';
-  meta = with lib; {
-    description = "A Linux web GUI client of Project V which supports V2Ray, Xray, SS, SSR, Trojan and Pingtunnel";
-    homepage = "https://github.com/v2rayA/v2rayA";
-    license = licenses.agpl3;
-  };
-}
+  buildGo117Module {
+    inherit pname version;
+    src = "${src}/service";
+    vendorSha256 = "sha256-RqpXfZH0OvoG0vU17oAHn1dGLQunlUJEW89xuCSGEoE=";
+    subPackages = ["."];
+    preBuild = ''
+      cp -a ${web} server/router/web
+    '';
+    meta = with lib; {
+      description = "A Linux web GUI client of Project V which supports V2Ray, Xray, SS, SSR, Trojan and Pingtunnel";
+      homepage = "https://github.com/v2rayA/v2rayA";
+      license = licenses.agpl3;
+    };
+  }

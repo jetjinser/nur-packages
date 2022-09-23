@@ -115,6 +115,25 @@
         },
         "version": "202209220104"
     },
+    "v2raya": {
+        "cargoLocks": null,
+        "extract": null,
+        "name": "v2raya",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "v2rayA",
+            "repo": "v2rayA",
+            "rev": "v1.5.9.1698.1",
+            "sha256": "sha256-h0ZYp/QY+UhQmhCiRkUAGy9zlkmDY7h+QxNzYvweJz0=",
+            "type": "github"
+        },
+        "version": "v1.5.9.1698.1"
+    },
     "xray": {
         "cargoLocks": null,
         "extract": null,

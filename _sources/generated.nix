@@ -71,6 +71,17 @@
       sha256 = "sha256-3FHoresOsgn+XlS807r7lZkOuqVwaaGYiTWbGG3uwOg=";
     };
   };
+  v2raya = {
+    pname = "v2raya";
+    version = "v1.5.9.1698.1";
+    src = fetchFromGitHub ({
+      owner = "v2rayA";
+      repo = "v2rayA";
+      rev = "v1.5.9.1698.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-h0ZYp/QY+UhQmhCiRkUAGy9zlkmDY7h+QxNzYvweJz0=";
+    });
+  };
   xray = {
     pname = "xray";
     version = "v1.6.0";

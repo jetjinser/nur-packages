@@ -14,6 +14,10 @@ fetch.url = "https://github.com/v2fly/geoip/releases/download/$ver/private.dat"
 src.github = "v2fly/domain-list-community"
 fetch.url = "https://github.com/v2fly/domain-list-community/releases/download/$ver/dlc.dat"
 
+[v2raya]
+src.github = "v2rayA/v2rayA"
+fetch.github = "v2rayA/v2rayA"
+
 [icalingua-plus-plus]
 src.github = "Icalingua-plus-plus/Icalingua-plus-plus"
 fetch.github = "Icalingua-plus-plus/Icalingua-plus-plus"
