@@ -57,10 +57,10 @@
   };
   v2fly-geosite = {
     pname = "v2fly-geosite";
-    version = "20220922071547";
+    version = "20220923071800";
     src = fetchurl {
-      url = "https://github.com/v2fly/domain-list-community/releases/download/20220922071547/dlc.dat";
-      sha256 = "sha256-mqAUTZ4qYkLL0rI72/Qzs/XgK0/0r+LPIIoQqZqwBVM=";
+      url = "https://github.com/v2fly/domain-list-community/releases/download/20220923071800/dlc.dat";
+      sha256 = "sha256-GFab/WkeC4LbE+NRWUayHZjbiggHbNPEw6eTLXIarRM=";
     };
   };
   v2fly-private = {

@@ -95,11 +95,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-mqAUTZ4qYkLL0rI72/Qzs/XgK0/0r+LPIIoQqZqwBVM=",
+            "sha256": "sha256-GFab/WkeC4LbE+NRWUayHZjbiggHbNPEw6eTLXIarRM=",
             "type": "url",
-            "url": "https://github.com/v2fly/domain-list-community/releases/download/20220922071547/dlc.dat"
+            "url": "https://github.com/v2fly/domain-list-community/releases/download/20220923071800/dlc.dat"
         },
-        "version": "20220922071547"
+        "version": "20220923071800"
     },
     "v2fly-private": {
         "cargoLocks": null,
