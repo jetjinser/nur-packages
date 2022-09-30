@@ -1,6 +1,5 @@
 {
   lib,
-  fetchFromGitHub,
   mkYarnPackage,
   buildGo117Module,
   sources,
@@ -8,17 +7,11 @@
 }: let
   pname = "v2raya";
   inherit (sources.v2raya) version src;
-  /* version = "48cc58d54727ea4beaadea5c0fb4150356809b72"; */
-  /* src = fetchFromGitHub { */
-  /*   owner = "SCP-2000"; */
-  /*   repo = "v2rayA"; */
-  /*   rev = version; */
-  /*   sha256 = "sha256-lLXg4KkdbOx8Sw8CPIQBkYpFJ5cX3immP0XcXkxKu78="; */
-  /* }; */
   web = mkYarnPackage {
     inherit pname version;
     src = "${src}/gui";
     buildPhase = ''
+      export NODE_OPTIONS=--openssl-legacy-provider
       ln -s $src/postcss.config.js postcss.config.js
       OUTPUT_DIR=$out yarn --offline build
     '';
