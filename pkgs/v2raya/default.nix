@@ -1,7 +1,7 @@
 {
   lib,
   mkYarnPackage,
-  buildGo117Module,
+  buildGo119Module,
   sources,
   ...
 }: let
@@ -20,7 +20,7 @@
     dontFixup = true;
   };
 in
-  buildGo117Module {
+  buildGo119Module {
     inherit pname version;
     src = "${src}/service";
     vendorSha256 = "sha256-RqpXfZH0OvoG0vU17oAHn1dGLQunlUJEW89xuCSGEoE=";
