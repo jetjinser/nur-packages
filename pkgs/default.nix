@@ -5,22 +5,21 @@
 # Having pkgs default to <nixpkgs> is fine though, and it lets you use short
 # commands such as:
 #     nix-build -A mypackage
-
-{ pkgs ? import <nixpkgs> { }
-, inputs ? null
-, ci ? false
-, ...
-}:
-
-let
-  sources = pkgs.callPackage ../_sources/generated.nix { };
-  pkg = path: args: pkgs.callPackage path ({
-    inherit sources;
-  } // args);
-  ifNotCI = p: if ci then null else p;
-  ifFlakes = p: if inputs != null then p else null;
-in
-rec {
+{
+  pkgs ? import <nixpkgs> {},
+  # , inputs ? null
+  # , ci ? false
+  ...
+}: let
+  sources = pkgs.callPackage ../_sources/generated.nix {};
+  pkg = path: args:
+    pkgs.callPackage path ({
+        inherit sources;
+      }
+      // args);
+  # ifNotCI = p: if ci then null else p;
+  # ifFlakes = p: if inputs != null then p else null;
+in rec {
   # Binary cache information
   _binaryCache = pkgs.recurseIntoAttrs rec {
     url = "https://jetjinser.cachix.org";
@@ -52,9 +51,10 @@ rec {
     };
   };
 
-  xray = pkg ./xray { };
-  v2raya = pkg ./v2raya { };
-  icalingua-plus-plus = pkg ./icalingua-plus-plus { };
-  gtk-qq = pkgs.callPackage ./gtk-qq { };
-  river-git = pkg ./river-git { };
+  xray = pkg ./xray {};
+  v2raya = pkg ./v2raya {};
+  icalingua-plus-plus = pkg ./icalingua-plus-plus {};
+  gtk-qq = pkgs.callPackage ./gtk-qq {};
+  river-git = pkg ./river-git {};
+  wasmedge = pkgs.callPackage ./wasmedge {};
 }
