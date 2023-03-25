@@ -8,7 +8,7 @@
 
 let
   inherit (sources.xray) version src;
-  vendorSha256 = "sha256-WBJbrZlw1h4IQsJGpBb3I+HKXZ9G/RMnUP4K1gGQsfg=";
+  vendorSha256 = "sha256-2P7fI7fUnShsAl95mPiJgtr/eobt+DMmaoxZcox0eu8=";
 
   assetsDrv = linkFarm "xray-assets" (lib.mapAttrsToList
     (name: path: {
@@ -21,7 +21,7 @@ let
       "geosite.dat" = sources.v2fly-geosite.src;
     });
 
-  core = buildGoModule rec {
+  core = buildGoModule {
     pname = "xray-core";
     inherit version src vendorSha256;
 
