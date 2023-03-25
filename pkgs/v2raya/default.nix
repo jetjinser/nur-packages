@@ -1,7 +1,8 @@
 {
   lib,
   mkYarnPackage,
-  buildGo119Module,
+  buildGoModule,
+  makeWrapper,
   sources,
   ...
 }: let
@@ -20,14 +21,16 @@
     dontFixup = true;
   };
 in
-  buildGo119Module {
+  buildGoModule {
     inherit pname version;
+
     src = "${src}/service";
     vendorSha256 = "sha256-RqpXfZH0OvoG0vU17oAHn1dGLQunlUJEW89xuCSGEoE=";
     subPackages = ["."];
     preBuild = ''
       cp -a ${web} server/router/web
     '';
+
     meta = with lib; {
       description = "A Linux web GUI client of Project V which supports V2Ray, Xray, SS, SSR, Trojan and Pingtunnel";
       homepage = "https://github.com/v2rayA/v2rayA";
