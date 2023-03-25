@@ -14,6 +14,9 @@
     src = "${src}/gui";
 
     yarnLock = "${src}/gui/yarn.lock";
+    yarnFlags = [
+      "--offline"
+    ];
 
     buildPhase = ''
       export NODE_OPTIONS=--openssl-legacy-provider
