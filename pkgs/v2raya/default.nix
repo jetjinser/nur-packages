@@ -13,16 +13,14 @@
     inherit pname version;
     src = "${src}/gui";
 
-    offlineCache = fetchYarnDeps {
-     yarnLock = src + "/gui/yarn.lock";
-     sha256 = "";
-    };
+    yarnLock = "${src}/gui/yarn.lock";
 
     buildPhase = ''
       export NODE_OPTIONS=--openssl-legacy-provider
       ln -s $src/postcss.config.js postcss.config.js
       OUTPUT_DIR=$out yarn --offline build
     '';
+
     distPhase = "true";
     dontInstall = true;
     dontFixup = true;
