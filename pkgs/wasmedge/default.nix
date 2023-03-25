@@ -33,7 +33,7 @@ llvmPackages.stdenv.mkDerivation rec {
 
   cmakeFlags = [
     "-DCMAKE_BUILD_TYPE=Release"
-    "-DWASMEDGE_PLUGIN_HTTPSREQ=On"
+    "-DWASMEDGE_PLUGIN_HTTPSREQ=ON"
     "-DWASMEDGE_BUILD_TESTS=OFF" # Tests are downloaded using git
   ];
 
