@@ -4,6 +4,7 @@
   buildGoModule,
   makeWrapper,
   sources,
+  fetchYarnDeps,
   ...
 }: let
   pname = "v2raya";
@@ -11,6 +12,12 @@
   web = mkYarnPackage {
     inherit pname version;
     src = "${src}/gui";
+
+    offlineCache = fetchYarnDeps {
+     yarnLock = src + "/gui/yarn.lock";
+     sha256 = "";
+    };
+
     buildPhase = ''
       export NODE_OPTIONS=--openssl-legacy-provider
       ln -s $src/postcss.config.js postcss.config.js
